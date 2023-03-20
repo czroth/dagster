@@ -958,6 +958,7 @@ export type DefaultPartitions = {
   __typename: 'DefaultPartitions';
   failedPartitions: Array<Scalars['String']>;
   materializedPartitions: Array<Scalars['String']>;
+  materializingPartitions: Array<Scalars['String']>;
   unmaterializedPartitions: Array<Scalars['String']>;
 };
 
@@ -2344,6 +2345,7 @@ export type PartitionStats = {
   __typename: 'PartitionStats';
   numFailed: Scalars['Int'];
   numMaterialized: Scalars['Int'];
+  numMaterializing: Scalars['Int'];
   numPartitions: Scalars['Int'];
 };
 
