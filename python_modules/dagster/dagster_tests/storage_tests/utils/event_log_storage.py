@@ -3155,6 +3155,7 @@ class TestEventLogStorage:
                 partitions_def_id="foo",
                 serialized_materialized_partition_subset="bar",
                 serialized_failed_partition_subset="baz",
+                serialized_in_progress_partition_subset="qux",
                 earliest_in_progress_materialization_event_id=42,
             )
             storage.update_asset_cached_status_data(asset_key=asset_key, cache_values=cache_value)
